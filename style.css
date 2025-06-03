@@ -70,7 +70,7 @@
 }
 
 
-.link{
+.link {
     font-size: 17px;
     color: #272829;
     text-decoration: none;
@@ -86,16 +86,27 @@
     position: relative;
     right: 0;
     background-color: rgb(255, 255, 255);
-    
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
-.RecipeHeader{
+.link:hover {
+    background-color: #ffebcc;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.RecipeHeader {
     margin-top: 2px;
     text-align: center;
-    font-family:'New Century Schoolbook', serif;
-    border : 2px dotted black;
+    font-family: 'New Century Schoolbook', serif;
+    border: 2px dotted black;
+    background-color: #fff8e1;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.RecipeBody{
-   background-color: rgb(255, 249, 230);
+
+.RecipeBody {
+    background-color: rgb(255, 249, 230);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -106,8 +117,13 @@
     margin: auto;
     font-size: 18px;
     line-height: 1.6;
+    transition: box-shadow 0.3s ease;
 }
-img{
+.RecipeBody:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
@@ -115,18 +131,32 @@ img{
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.description{
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.description {
     font-size: 16px;
     margin-top: 10px;
     text-align: center;
     border-bottom: #272829 solid 2px;
+    padding-bottom: 5px;
+    color: #555;
 }
-h2{
+
+h2 {
     text-align: center;
     font-family: 'New Century Schoolbook', serif;
-
+    color: #333;
+    margin-bottom: 15px;
 }
-h3{
+
+h3 {
     text-decoration: underline;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
