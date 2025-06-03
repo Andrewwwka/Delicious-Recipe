@@ -27,8 +27,8 @@
     font-family: Arial, sans-serif;
     li{
         list-style-type: '🍽️';
+        line-height: 30px;
         margin:auto;
-        word-spacing: normal;
         padding: 5px;
         font-size: 18px;
         color: #333;
